@@ -8,11 +8,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background:linear-gradient(135deg, #939393 0%,#424a53 100%);
 }
-
-
-
-
-
 .main {
     background-image: url('back1.jpg');
     background-size: cover;
@@ -24,7 +19,7 @@ body {
     height: 85vh;
     margin-left: 100px;
     padding: 20px;
-    box-shadow:0 1px 10px rgb(180 175 175);
+    box-shadow: rgb(183 183 183 / 17%) 0px -23px 25px 0px inset, rgb(169 169 169 / 15%) 0px -36px 30px 0px inset, rgb(111 111 111 / 10%) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     overflow: hidden;
     position: relative;
 }
@@ -118,10 +113,10 @@ letter-spacing: 2px;
 .search-container {
     display: flex;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 90px;
 }
 
-input[type="text"] {
+.custom-search-container input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     width:30%;
@@ -144,7 +139,7 @@ input[type="text"] {
 .social{
     display: flex;
     align-items: center;
-    margin-top: 180px;
+    margin-top: 220px;
 }
 .telegram-icon, .insta-icon , .fb-icon, .whatsapp-icon {
     margin-left: 10px;
@@ -168,7 +163,7 @@ input[type="text"] {
     height: auto;
     margin-top: 90px;       
 }
-.text-a{
+.text-a ,.text-b{
     letter-spacing: 2px;
     font-family: 'PT Sans Narrow', sans-serif;
     text-transform: uppercase;
@@ -183,36 +178,63 @@ input[type="text"] {
     font-size: 18px;
 }
 
-.card-a ,.card-c {
+.card-a ,.card-c,.card-e {
     display: flex;
     justify-content: flex-start;
     height: 220px;
     width: 350px;
     border-radius: 40px;
-    border: 1px solid rgb(223, 223, 7);
     background-color: rgb(213, 213, 213);
-    box-shadow:20px 20px 60px rgba(0, 0, 0, 0.274), inset -20px -20px 60px rgba(0, 0, 0, 0.322);
+    box-shadow:20px 20px 60px rgba(0, 0, 0, 0.274), inset -20px -20px 60px #5f6468;
     padding: 45px;
     margin: 30px;
     margin-left: 100px;
     font-family: 'Poppins' ,sans-serif;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.card-b ,.card-d {
+.card-b ,.card-d ,.card-f{
     display: flex;
     justify-content: flex-end;
     height: 220px;
     width: 350px;
     border-radius: 40px;
-    border: 1px solid rgb(223, 223, 7);
     background-color: rgb(220, 220, 220);
-    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.274), inset -20px -20px 60px rgba(0, 0, 0, 0.322);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.274), inset -20px -20px 60px #5f6468;
     padding: 45px;
     margin: 60px;
     margin-top: -342px;
     margin-left: 730px;
+    transition: opacity 0.5s ease-in-out ,transform 0.5s ease-in-out;
+    transform: translateY(20px);
 }
-.top-a{
+.card-a:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-b:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-c:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-d:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-e:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-f:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.top-a ,.top-b ,.top-c,.top-d,.top-e,.top-f{
 
     text-align: center;
     color: #000000;
@@ -220,9 +242,22 @@ input[type="text"] {
     margin-top: -15px;
     margin-left: 20px;
 }
-.phrase{
+.phrase ,.phrase-a,.phrase-b,.phrase-c,.phrase-d,.phrase-e{
     text-align: center;
     margin-top: 25px;
     font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.phrase-f{
+    color: #fff;
+    font-family: 'Poppins' ,sans-serif;
+    margin: 35px;
+    font-size: 18px;
+}
+
+.gallery{
+    text-align:center;
+    height: 100vh;
+    margin-top: 100px;
+
 }
